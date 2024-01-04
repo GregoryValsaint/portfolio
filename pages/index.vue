@@ -41,6 +41,4 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
         <Post :posts="posts" />
         </div>
     </section>
-
-
 </template>

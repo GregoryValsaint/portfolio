@@ -2,7 +2,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 
-const route = useRoute();
+const route = { name: 'index' };
 
 const user = {
   name: 'Tom Cook',
@@ -11,10 +11,10 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Home', href: '/', current: route.name == 'index' },
+  { name: 'Accueil', href: '/', current: route.name == 'index' },
   { name: 'Blog', href: '/blog', current: route.name.includes('blog') },
-  { name: 'Projects', href: '/projects', current: route.name == 'projects' },
-  { name: 'Calendar', href: '/calendar', current: route.name == 'calendar' },
+  { name: 'Projets', href: '/projets', current: route.name == 'projets' },
+  { name: 'Planning', href: '/planning', current: route.name == 'planning' },
   { name: 'Reports', href: '/reports', current: route.name == 'reports' },
 ]
 const userNavigation = [
